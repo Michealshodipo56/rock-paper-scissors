@@ -1,0 +1,167 @@
+body{
+    font-family: 'poppins';
+    background-color: black;
+    color: white;
+}
+.logo{
+    width: 5em;
+    animation: forwards down 1s;
+    opacity: 0;
+}
+@keyframes down{
+    from{transform: translateY(-50px);}
+    to{transform: translateY(0);
+        opacity: 1;}
+
+}
+.logo-name{
+    font-weight: bold;
+    font-size: 25px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-weight: bold;
+    font-size: 25px;
+    width: 67%;
+    text-align: center;
+}
+
+
+
+
+.move-button{
+    background-color: transparent;
+    border-radius: 100em;
+    padding: 2em;
+    margin-right: 2em;
+    border: solid white 4px;
+    cursor: pointer;
+}
+.move-icon{
+    width: 9em;
+}
+.reset{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reset:active{
+    background-color: yellow;
+}
+.container{
+    text-align: center;
+}
+.cs-result{
+    font-size: 30px;
+    font-weight: bold;
+}
+.cs-move{
+    width: 2em;
+}
+.text{
+    font-size: 30px;
+}
+.cs-score{
+    font-size: 20px;
+}
+.name{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.green{
+    color: green;
+}
+
+
+
+.code-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 15px;
+    justify-content: center;
+    font-family: 'consolas';
+}
+.html{
+    border: solid white 2px;
+}
+.css{
+    border: solid white 2px;
+}
+.javascript{
+    border: solid white 2px;
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    .logo{
+        width: 3em;
+    }
+    .logo-name{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 20px;
+    }
+
+    .move-icon{
+        width: 5em;
+    }
+    .cs-result{
+        font-size: 25px;
+    }
+    .cs-move{
+        width: 2em;
+    }
+    .text{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 410px){
+    .text{
+       
+        width: 12em; 
+    }
+    .js-move{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 350px){
+    .move-icon{
+        width: 4em;
+    }
+    .cs-move{
+        width: 2em;
+    }
+    .move-button{
+        padding: 1.5em;
+    }
+    .code-box{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 275px){
+    .code-box{
+        font-size: 10px;
+    }
+}
